@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Absensi Guru - 12F</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: #1565c0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .class-info {
+            text-align: center;
+            background: #2196f3;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .class-info h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .class-info p {
+            margin: 5px 0 0 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #1976d2;
+            color: white;
+            font-weight: bold;
+        }
+        .present { color: #2e7d32; font-weight: bold; }
+        .absent { color: #c62828; font-weight: bold; }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .links a {
+            color: #0d47a1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👨‍🏫 Tampilan Absensi Guru</h1>
+        <div class="class-info">
+            <h2>Kelas 12F</h2>
+            <p>SMA Kelas 12 - Bagian F</p>
+            <p>Memantau Absensi Siswa untuk Pembelajaran yang Lebih Baik</p>
+        </div>
+        <div class="links">
+            <a href="index.html">📚 Tampilan Siswa</a>
+        </div>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>👤 Siswa</th>
+                    <th>📅 Tanggal</th>
+                    <th>⏰ Waktu</th>
+                    <th>📊 Status</th>
+                    <th>📍 Lokasi</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceBody"></tbody>
+        </table>
+        <footer>
+            <p>&copy; 2026 Sistem Absensi Kelas 12F. Memberdayakan Guru dan Siswa.</p>
+        </footer>
+    </div>
+    <script src="teacher.js"></script>
+</body>
+</html>
